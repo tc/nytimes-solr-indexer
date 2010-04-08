@@ -1,0 +1,22 @@
+Solr Indexer for The New York Times Annotated Corpus
+---
+This script will index the New York Times Corpus NITF xml news data provided by the Linguistic Data Consortium (LDC).
+It also contains an example solr schema file to help you get started.
+
+To use the solr schemas, copy schema.xml and solrconfig.xml to your solr/config folder.
+Then, start up your solr instance.
+
+To run this script, first install:
+jruby
+and the rsolr ruby gem:
+jgem install rsolr 
+
+Then just run:
+jruby nytimes_solr_indexer.rb "path/to/nytimes data/data"
+
+
+
+Questions or need some help?
+Contact the author Tommy Chheng
+@tommychheng
+http://tommy.chheng.com
