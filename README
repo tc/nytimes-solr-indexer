@@ -1,6 +1,7 @@
 Solr Indexer for The New York Times Annotated Corpus
 ---
-This script will index the New York Times Corpus NITF xml news data provided by the Linguistic Data Consortium (LDC).
+This script will untar and index the New York Times Corpus NITF xml dump provided by the Linguistic Data Consortium (LDC).
+
 It also contains an example solr config files to help you get started.
 
 To use the solr schemas, copy schema.xml and solrconfig.xml to your solr/config folder.
@@ -14,6 +15,9 @@ To run the indexer script:
 *You can also post to a solr server by specifying a solr server in the second parameter:
  jruby nytimes_solr_indexer.rb "path/to/nytimes data/data" http://localhost:8983/solr
 
+NOTES:
+Tested on Mac OSX 10.6. Should work on any linux systems.
+I use the tar app so Windows users may need to download cygwin or msys. Alternatively, you can comment the line and untar manually.
 
 Questions or need some help?
 Contact the author Tommy Chheng
