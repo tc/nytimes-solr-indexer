@@ -11,7 +11,7 @@ To run the indexer script:
 3. Copy timestools.jar from the "nytimes data/build/timestools.jar" directory
 4. jruby nytimes_solr_indexer.rb "path/to/nytimes data/data" "/path/to/solr/home"
 
-*You can also post a solr server by specifying a solr server in the second parameter:
+*You can also post to a solr server by specifying a solr server in the second parameter:
  jruby nytimes_solr_indexer.rb "path/to/nytimes data/data" http://localhost:8983/solr
 
 
