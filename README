@@ -16,10 +16,16 @@ To run the indexer script:
  jruby nytimes_solr_indexer.rb "path/to/nytimes data/data" http://localhost:8983/solr
 
 NOTES:
-Tested on Mac OSX 10.6. Should work on any linux systems.
-I use the tar app so Windows users may need to download cygwin or msys. Alternatively, you can comment the line and untar manually.
+Tested on Mac OSX 10.6 with JRuby 1.4.0. Should work on any linux systems.
+I use the tar unix app so Windows users may need to download cygwin or msys. Alternatively, you can comment the line and untar manually.
 
-Questions or need some help?
+--
+May 4 2010:
+Added require 'date' and uncommented untar command.
+Thanks to Aditi S Muralidharan for the report.
+
+
+Questions, bugs or need some help?
 Contact the author Tommy Chheng
 @tommychheng
 http://tommy.chheng.com

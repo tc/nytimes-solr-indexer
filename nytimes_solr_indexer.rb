@@ -3,6 +3,7 @@ require 'rubygems'
 require 'rsolr'
 require 'rsolr-direct'
 require 'timestools.jar'
+require 'date'
 
 class String
   def starts_with?(prefix)
@@ -145,7 +146,7 @@ else
   end
       
   puts "Processing #{ARGV[0]}"
-  #untar_dir(dir)
+  untar_dir(dir)
   index_dir(dir, opts)  
   puts "Done!"
 end
