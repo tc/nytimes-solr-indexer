@@ -208,6 +208,7 @@
   <field name="leadParagraph" type="text" indexed="true" stored="true"/>
   <field name="newsDesk" type="text" indexed="true" stored="true"/>
   <field name="normalizedByline" type="text" indexed="true" stored="true"/>
+  <field name="onlineLeadParagraph" type="text" indexed="true" stored="true"/>
   <field name="onlineHeadline" type="text" indexed="true" stored="true"/>
   <field name="onlineSection" type="text" indexed="true" stored="true"/>
   <field name="section" type="text" indexed="true" stored="true"/>
