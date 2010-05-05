@@ -181,12 +181,13 @@
                  etagSeed="Solr">
     </httpCaching>
   </requestDispatcher>
-    
-  <requestHandler name="/dataimport" class="org.apache.solr.handler.dataimport.DataImportHandler">
+
+  <!-- Data Import Handler is a faster way of indexing your data. You can find an example file provided with Solr. -->
+  <!-- <requestHandler name="/dataimport" class="org.apache.solr.handler.dataimport.DataImportHandler">
     <lst name="defaults">
       <str name="config">data-config.xml</str>
     </lst>
-  </requestHandler>
+  </requestHandler> -->
   
   <requestHandler name="standard" class="solr.SearchHandler">
      <lst name="defaults">
