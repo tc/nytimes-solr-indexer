@@ -20,9 +20,14 @@ Tested on Mac OSX 10.6 with JRuby 1.4.0. Should work on any linux systems.
 I use the tar unix app so Windows users may need to download cygwin or msys. Alternatively, you can comment the line and untar manually.
 
 --
+May 5 2010:
+Added missing onlineLeadParagraph. There are now 50 fields in the indexer and 50 in the provided solr schema. 
+Commented out data import handler. There is an example data-config.xml file provided with solr if you wish to use it.
+Thanks to Aditi S Muralidharan.
+
 May 4 2010:
 Added require 'date' and uncommented untar command.
-Thanks to Aditi S Muralidharan for the report.
+Thanks to Aditi S Muralidharan.
 
 
 Questions, bugs or need some help?
