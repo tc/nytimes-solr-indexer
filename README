@@ -2,7 +2,7 @@ Solr Indexer for The New York Times Annotated Corpus
 ---
 This script will untar and index the New York Times Corpus NITF xml dump provided by the Linguistic Data Consortium (LDC).
 
-It also contains an example solr config files to help you get started.
+It also contains an example solr config files to help you get started. These are just examples and you should change these to fit your system!
 
 To use the solr schemas, copy schema.xml and solrconfig.xml to your solr/config folder.
 
@@ -19,7 +19,18 @@ NOTES:
 Tested on Mac OSX 10.6 with JRuby 1.4.0. Should work on any linux systems.
 I use the tar unix app so Windows users may need to download cygwin or msys. Alternatively, you can comment the line and untar manually.
 
+The included solr schema.xml file is all-inclusive by default. It is set to index and store all fields.
+If you do not intend to use all fields, you can notice a improvement by not indexing the unused fields or not storing the fields.
+In schema.xml, just comment out a field
+<!-- <field name="biographicalCategories" type="string" indexed="true" stored="true" multiValued="true"/> -->
+or remove stored="true" to not store the field.
+
+Refer to the Solr documentation for more information: http://wiki.apache.org/solr/SchemaXml
+
 --
+May 13 2010:
+README update.
+
 May 5 2010:
 Added missing onlineLeadParagraph. There are now 50 fields in the indexer and 50 in the provided solr schema. 
 Commented out data import handler. There is an example data-config.xml file provided with solr if you wish to use it.
